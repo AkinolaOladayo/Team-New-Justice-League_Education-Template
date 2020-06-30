@@ -1,15 +1,20 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
 body{
     margin: 0;
 	padding: 0;
-	box-sizing: border-box;
 	font-size: 14px;
+	background-color: #F2F6FF;
 }
 
 .my-container{
 	background-color: #F2F6FF;;
-	height: 2000px;
 	width: 100%;
-	padding: 0px 0px;	
+	padding: 0px 11px;	
 }
 
 .row {
@@ -20,16 +25,12 @@ body{
 /* Shaydee, please work on the image in this div called ".my-section1" */
 
 .my-section1{
-	background: url(../img/Rectangle\ 2.png) #C4C4C4 no-repeat center center;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+	background: url(../img/image11.png) #C4C4C4 no-repeat center center;
+	background-position: center;
+	background-repeat: no-repeat;
 	background-size: cover;
-	position: absolute;
-	/* width: 659px; */
-	width: 100%;
-	height: 1025px;
-	left:0px;
+	max-width: 100%;
+	height: 1000px;
 }
 
 .my-section2{
@@ -37,7 +38,7 @@ body{
 	position: absolute;
 	/* width: 781px; */
 	width: 100%;
-	height: 1025px;
+	height: auto;
 	left: 659px;
 	padding: 80px 100px 30px 100px;
 	
@@ -78,13 +79,30 @@ body{
   @media only screen and (max-width: 768px) {
 	.my-section1{
 		  width: 100%;
+		  margin: 0;
+		  padding: 10px;
 	  }
+
+	  div.container-fluid{
+		  padding: 0;
+	  }
+
+	  div.row.d-flex.col-12.col-sm-6.col-md-6{
+		  margin: 0;
+		  padding: 0;
+	  }
+
 	.my-section2{
-		left: 390px;
-		top: 150px;
-		padding: 10px 20px 10px 20px;
 		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 0;
+
 	}
+
 	.google-img{
 		position: relative;
 		right: 60px;
